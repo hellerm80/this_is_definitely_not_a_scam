@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday!</title>
+  <style>
+    body {
+      margin: 0;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .dancer {
+      width: 300px;
+      animation: dance 1.2s infinite ease-in-out;
+    }
+
+    @keyframes dance {
+      0%   { transform: rotate(0deg) translateY(0); }
+      25%  { transform: rotate(2deg) translateY(-5px); }
+      50%  { transform: rotate(0deg) translateY(0); }
+      75%  { transform: rotate(-2deg) translateY(-5px); }
+      100% { transform: rotate(0deg) translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy Birthday!</h1>
+  <img class="dancer" src="Cramer.Stick.Figure.Dancing.png" alt="Dancing Stick Figure with Maracas" />
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
